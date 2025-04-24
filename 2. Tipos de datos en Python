@@ -1,0 +1,43 @@
+#EJercicio 2 Tipos de datos en Python
+#Cuarto Ejercicio
+
+#Datos de entrada
+entero=int(input("Ingresa un numero:"))
+cadena=9
+numeroconvertido=int(entero+cadena)
+resultadoconvertido= numeroconvertido
+
+#Operaciones
+resultadoconvertido= numeroconvertido
+#Salida
+print("Hola este es tu resumen:")
+print(f"el resultado convertido es: {resultadoconvertido}.")
+
+
+
+#quinto ejercicio
+texto=str(input("Ingresa un numero:"))
+textoconvertido=float(texto)
+multi= textoconvertido*2
+#operacion
+resultadomultiplicacion=textoconvertido + multi
+#Salida
+print(f"Hola este es el resultado {resultadomultiplicacion}.")
+
+
+
+#Sexto Ejercicio
+#Datos Entrada
+sepuedeconvertir=str(input("Ingresa una palabra:"))
+convertida=False
+#Operacion
+try:
+    valor=float(sepuedeconvertir)
+    convertida=True
+except ValueError:
+    convertida=False
+
+if convertida==True:
+    print("Se pudo convertir")
+else:
+    print("No se pudo convertir")
