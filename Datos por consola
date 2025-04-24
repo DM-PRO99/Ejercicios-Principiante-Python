@@ -1,0 +1,28 @@
+ #Primer Ejercicio Python datos por consola
+#Datos de Entrada
+NOMBREUSUARIO= input("Ingresa tu nombre:")
+Edad=int(input("Ingresa tu edad:"))
+
+#Salida
+print(f"Hola {NOMBREUSUARIO} espero te encuentres muy bien!,tu edad es {Edad} años.")
+
+#Segundo ejercicio
+#Datos de entrada
+Comida=str(input("Ingresa tu comida favorita:"))
+color=str(input("Ingresa tu color favorito:"))
+
+#Salida
+print(f"Hola!!,{NOMBREUSUARIO} veo que tu comida y color favorito son:La comida  {Comida} y el color {color} son tus favoritos.")
+
+
+#Tercer Ejercicio
+#datos de entrada
+numero= float(input("Ingresa un numero:"))
+#Operaciones
+doble= numero * 2
+triple= numero * 3
+
+#Salida
+print(f"Hola {NOMBREUSUARIO} este seria el resultado doble y triple:")
+print(f"EL doble es {doble}.")
+print(F"El triple es {triple}.")
