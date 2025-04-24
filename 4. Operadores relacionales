@@ -1,0 +1,41 @@
+#Ejercicio 1
+#Datos Entrada
+numero1=float(input("Ingresa un numero:"))
+numero2=float(input("Ingresa un numero:"))
+ #Operacion comparar
+if numero1> numero2:
+ 
+ print("El primer numero es mayor.")
+
+elif numero2 >numero1:
+
+ print("El segundo numero es mayor.")
+
+else:
+
+ print("Ambos numeros son iguales.")
+ 
+
+
+#Segundo ejercicio
+#Datos de entrada
+edad=int(input("Ingresa tu edad:"))
+#Operacion
+if edad>=18:
+    print("Eres mayor de edad.")
+else:
+    print("Eres menor de edad.")
+
+ 
+
+
+#Tercer Ejercicio
+#Datos de entrada
+cadena1= input("Hola ingresa una palabra.")
+cadena2= input("Ingresa una palabra")
+#Operacion con IF
+if cadena1==cadena2:
+  print("son las mismas palabras.")
+else:
+  print("Son diferentes.")
+
