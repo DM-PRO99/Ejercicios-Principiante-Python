@@ -1,13 +1,14 @@
 #5. Operadores lógicos
 #Primer Ejercicio
 #Datos de entrada
+nombre=input("Ingresa tu nombre:")
 edad=int(input("Hola ingresa tu edad:"))
 
 #Operacion
 if edad<18:
-    print("No tienes Licencia de Conduccion.")
+    print(f"{nombre} No tienes Licencia de Conduccion.")
 elif edad>18:
-    print("Tienes Licencia de Conduccion.")
+    print(f"{nombre} Tienes Licencia de Conduccion.")
 
     
 
@@ -23,9 +24,9 @@ puedeaplicar= experiencialaboral=="si" and Titulo=="si"
 
 #mostrar resultado
 if puedeaplicar:
-    print("Puedes aplicar al trabajo.")
+    print(f"{saludo} Puedes aplicar al trabajo.")
 else:
-    print("No cumples los requisitos.")
+    print(f"{saludo} No cumples los requisitos.")
 
  
 
@@ -37,6 +38,6 @@ Numero=int(input("Ingresa un numero:"))
 
 #Operacion y resultado
 if 10 <= Numero <= 50:
-    print("Estás en el rango de 10 a 50.")
+    print(f"{nombre}Estás en el rango de 10 a 50.")
 else:
-    print("No estás en el rango de 10 a 50.")
+    print(f"{nombre}No estás en el rango de 10 a 50.")
