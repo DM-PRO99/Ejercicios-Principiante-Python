@@ -1,0 +1,73 @@
+#EJercicio 1
+nombre=input("Hola ingresa tu nombre:")
+numero=int(input("Ingrese un numero:"))
+
+if numero> 0:
+    print(f"{nombre},el numero es positivo.")
+elif numero < 0:
+    print(f"{nombre},el numero es negativo")
+else:
+    print(f"{nombre},el numero es Cero")
+
+ 
+
+
+#Ejercicio 2
+calificaion=float(input("Ingresa la Calificacion:"))
+aprobado=60
+noaprueba=59
+
+if calificaion==60:
+    print(f"{nombre} Aprueba la materia")
+else:
+    print(f"{nombre} Reprobado,pailas mijo.")
+ 
+
+
+#Ejercicio 3
+numero=int(input("Ingrese un numero:"))
+
+for i in range (1,11):
+    resultado= numero* i
+    print(f"{numero} x {i}= {resultado}")
+
+
+
+#Ejercicio 4
+while numero>=0:
+    print("Papi ingrese un numero.")
+    numero-=1
+
+
+#Ejercicio 5
+import random
+
+
+#Datos de entrada
+# Solicita al usuario que ingrese un número
+adivinanza = int(input("Ingresa tu numero: "))
+numerosecreto = random.randint(1, 10)
+
+# Se dan 3 intentos
+intentos = 3
+print("Adivina el número entre 1 y 10")
+
+# Ciclo para los intentos
+while intentos > 0:
+    # Se resta un intento al inicio de cada ciclo
+    intentos -= 1
+
+    # Compara el número ingresado por el usuario con el número secreto
+    if adivinanza == numerosecreto:
+        print("¡Felicidades, adivinaste el número!")
+        break  # Sale del ciclo si adivinó el número
+    elif adivinanza < numerosecreto:
+        print("El número secreto es mayor.")
+    else:
+        print("El número secreto es menor.")
+
+    # Si no ha adivinado, pide un nuevo número
+    if intentos > 0:
+        adivinanza = int(input(f"Te quedan {intentos} intento(s). Ingresa otro número: "))
+    else:
+        print(f"Lo siento, se acabaron los intentos. El número secreto era {numerosecreto}.")
