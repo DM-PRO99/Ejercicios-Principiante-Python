@@ -1,0 +1,26 @@
+El Principio de Sustitución de Liskov (LSP) es uno de los cinco principios SOLID, fundamentales para escribir código orientado a objetos que sea flexible, reutilizable y fácil de mantener.
+Este principio establece que una subclase debe poder sustituir a su clase base sin alterar el comportamiento esperado del programa.
+
+CODIGO INCORRECTO
+class Ave:
+    def volar(self):
+        print("Volando")
+
+class Pinguino(Ave):
+    def volar(self):
+        raise NotImplementedError("Los pingüinos no pueden volar")
+CODIGO CORRECTO
+from abc import ABC, abstractmethod
+
+class Ave(ABC):
+    @abstractmethod
+    def moverse(self):
+        pass
+
+class Pinguino(Ave):
+    def moverse(self):
+        print("Caminando torpemente")
+
+class Aguila(Ave):
+    def moverse(self):
+        print("Volando alto")
