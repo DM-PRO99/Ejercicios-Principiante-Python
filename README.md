@@ -57,8 +57,8 @@ def add_product():
 
 
 
-**OTRO EJEMPLO SERIA:)**
-# Function to display the menu
+# OTRO EJEMPLO SERIA:)
+**Function to display the menu**
 def display_menu():
     """
     Displays the main menu with options.
@@ -77,5 +77,6 @@ que se requiere y la salida el resutlado que esperó de cada opcion puesta en el
 
 
 Documentación:
-[markdown] (https://docs.python.org/es/3/)
-[markdown] (https://github.com/illuminaki/python-funciones)
+
+(https://docs.python.org/es/3/)
+(https://github.com/illuminaki/python-funciones)
