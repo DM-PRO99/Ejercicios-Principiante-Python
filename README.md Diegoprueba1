@@ -1,4 +1,4 @@
-#GESTION DE **INVENTARIO**
+##GESTION DE **INVENTARIO**
 
 Funcionalidades Principales del programa:
 -Añadir productos al inventario.
@@ -8,7 +8,7 @@ Funcionalidades Principales del programa:
 -Calcular el valor total del inventario.
 
 
-##¿Cómo funciona?
+## ¿Cómo funciona?
 
 El programa tiene un menú de opciones para que facilite al encargado la opcion que se acomode en su momento poderla ejecutar y asi ahorrar tiempo
 y que haya un orden en el inventario, un control de cada cosa.
