@@ -1,89 +1,98 @@
-# Inventario
-inventario = {}
+#Funcion
+Inventory=()
 
-# Función para añadir un producto
-def añadir_producto(nombre, precio, cantidad):
-    if nombre in inventario:
-        print(f"El producto '{nombre}' ya existe en el inventario.")
+#Program Features
+#Function to add products.
+
+def add_product(name, price, quantity):
+    if name in Inventory:
+        print(f"The Product {name} already exists in inventory.")
     else:
-        inventario[nombre] = {'precio': precio, 'cantidad': cantidad}
-        print(f"Producto '{nombre}' añadido al inventario.")
+        Inventory[name] = {"price":price, "quantity": quantity}
+        print(f"Product {name} add to inventory")
 
-# Función para consultar un producto
-def consultar_producto(nombre):
-    producto = inventario.get(nombre)
-    if producto:
-        print(f"Producto: {nombre}, Precio: {producto['precio']}, Cantidad: {producto['cantidad']}")
+#Function To view a product
+
+def consult_product(name):
+    product= Inventory.get(name)
+    if product:
+       print(f"Product: {name}, prize:{product["Prize"]}, quantity: {product["quantity"]}")
     else:
-        print(f"El producto '{nombre}' no se encuentra en el inventario.")
+        print(f"The product {name} It is not in the inventory.")
 
-# Función para actualizar el precio de un producto
-def actualizar_precio(nombre, nuevo_precio):
-    producto = inventario.get(nombre)
-    if producto:
-        producto['precio'] = nuevo_precio
-        print(f"Precio del producto '{nombre}' actualizado a {nuevo_precio}.")
+
+#Function to update the price
+
+def update_price(name,newprice):
+    product= Inventory.get(name)
+    if product:
+        product["Price"] = newprice
+        print(f"The product price is {name} update to {newprice}")
     else:
-        print(f"El producto '{nombre}' no se encuentra en el inventario.")
+        print(f"The product {name} It is not in the inventory.")
+    
+#Function to delete product
 
-# Función para eliminar un producto
-def eliminar_producto(nombre):
-    if nombre in inventario:
-        del inventario[nombre]
-        print(f"Producto '{nombre}' eliminado del inventario.")
+def delete_product(name):
+    if name in Inventory:
+        del Inventory[name]
+        print(f"The product {name} has been erased from the inventory.")
     else:
-        print(f"El producto '{nombre}' no se encuentra en el inventario.")
+        print(f"The product {name} It is not in the inventory.")
 
-# Función para calcular el valor total del inventario
-def calcular_valor_total():
-    valor_total = sum(map(lambda p: p['precio'] * p['cantidad'], inventario.values()))
-    print(f"Valor total del inventario: {valor_total}")
+#Function to calculate the inventory.
+def calculate_inventory():
+    totalvalue= sum(map(lambda p: p["Price"] *p["quantity"], Inventory.values()))
+    print(F"Total Inventory Value {totalvalue}")
 
-# Función para mostrar el menú de opciones
-def mostrar_menu():
-    print("\n--- Menú de Inventario ---")
-    print("1. Añadir producto")
-    print("2. Consultar producto")
-    print("3. Actualizar precio")
-    print("4. Eliminar producto")
-    print("5. Calcular valor total")
-    print("6. Salir")
+#Function to display the options menu.
+def showmenu():
+    print("Hello Welcome")
+    print("\n--- Inventory Menu---")
+    print("1. Add Product")
+    print("2. consult product")
+    print("3. Update price")
+    print("4. Delete Price")
+    print("5. Calculate Total Value")
+    print("6. Exit")
 
-# Función principal para ejecutar el programa
-def ejecutar_programa():
+
+
+#Main function to run the program
+def Runprogram():
     while True:
-        mostrar_menu()
-        opcion = input("Seleccione una opción: ")
-
-        if opcion == '1':
-            nombre = input("Nombre del producto: ")
+        showmenu()
+        option= input("Select an option:")
+        if option ==  "1":
+            name=input("Name the prouct:")
             try:
-                precio = float(input("Precio del producto: "))
-                cantidad = int(input("Cantidad disponible: "))
-                añadir_producto(nombre, precio, cantidad)
+                price=input("Price the product:")
+                quantity= int(input("available quantity:"))
+                add_product(name, price, quantity)
             except ValueError:
-                print("Por favor, ingrese valores válidos para precio y cantidad.")
-        elif opcion == '2':
-            nombre = input("Nombre del producto a consultar: ")
-            consultar_producto(nombre)
-        elif opcion == '3':
-            nombre = input("Nombre del producto a actualizar: ")
+                print("Please enter valid values for price and quantity.")
+        elif option == "2":
+            name = input("Name of the product to be consulted: ")
+            consult_product(name)
+        elif option == "3":
+            name =input("Name of the product to update: ")
             try:
-                nuevo_precio = float(input("Nuevo precio: "))
-                actualizar_precio(nombre, nuevo_precio)
+                newprice = float(input("Nuevo precio:"))
+                update_price(name, newprice)
             except ValueError:
-                print("Por favor, ingrese un valor válido para el precio.")
-        elif opcion == '4':
-            nombre = input("Nombre del producto a eliminar: ")
-            eliminar_producto(nombre)
-        elif opcion == '5':
-            calcular_valor_total()
-        elif opcion == '6':
-            print("Gracias por usar el sistema de inventario.")
+                print("Please enter a valid value for the price.")    
+        elif option == "4":
+            name = input("Name of the product to be deleted: ")
+            delete_product(name)
+        elif option == "5":  
+            calculate_inventory()
+        elif option =="6":
+            print("Thank you for using the inventory system.")
             break
         else:
-            print("Opción no válida. Por favor, intente nuevamente.")
-
-# Ejecutar el programa
-if __name__ == "__main__":
-    ejecutar_programa()
+            print("Invalid option. Please try again.")
+         
+        
+#Run Program
+if __name__== "__main__":
+    Runprogram()
