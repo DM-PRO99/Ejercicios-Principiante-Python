@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web Diego</title>
+</head>
+ <!---Este es el inicio de la pagina y cambie el color del fondo de la pagina-->
+<body   style="background-color: bisque;">
+    <!---Este es el inicio de la pagina y cambie el color del encabezado del titulo-->
+        <h1 style="color:orange">"Bienvenidos a mi sitio Web"</h1>
+    <!---Este es el inicio de la pagina y cambie el color de la letra de Bienvenidos a mi sitio web-->
+        <p style="color:brown">Orgulloso de mi creacion </p> <br>
+    <!---Aqui inserté una imagen con un enlace externo-->
+        <img src="https://rukminim2.flixcart.com/image/850/1000/l0e6kcw0/poster/a/m/a/medium-fc-barcelona-logo-on-fine-art-paper-hd-quality-wallpaper-original-imagc6xxqrgzmxv3.jpeg?q=90&crop=fals"width="300", weihgt="300">
+     <br>
+        <a href="file:///home/coders/Im%C3%A1genes/Ws%20Diego/EjerciciosHtml.html"> Ir a mi pagina</a>
+     <br>
+        <a href="https://www.w3schools.com/html/mov_bbb.mp4"> Mira el video </a> </video>
+
+
+
+    <!--EJercicio 5-->
+    <h1>Formulario</h1>
+    <h2>Datos de contacto:</h2>
+    <input type="Ingresa tu nombre:"><br>
+    <input type="Ingresa tu email:"><br>
+    <button>ENVIAR</button>
+</body>
+</html> 
